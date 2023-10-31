@@ -14,7 +14,7 @@
 ```cdk bootstrap```
 1. デプロイ  
 ```cdk deploy```
-1. Outputs に表示される URL にアクセス。EC2 の環境構築までに10分~15分かかります。  
+1. Outputs に表示される URL にアクセス（EC2 の環境構築までに10分~15分かかります）  
 ```Outputs: LangflowCdkStack.DNSAdress = http://XXX.HOSTED_REAGION.elb.amazonaws.com:7860```
 1. 削除  
 ```cdk destroy```
