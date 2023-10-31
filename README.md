@@ -6,15 +6,17 @@
 
 1. このリポジトリをクローン  
 ```git clone https://github.com/kazuki306/langflow-cdk.git```
+1. ディレクトリを移動  
+```cd langflow-cdk```
 1. 必要なモジュールをインストール  
 ```npm install```
 1. CloudFormationのテンプレート作成  
 ```cdk synth```
-1. ブートストラップスタックをインストール  
+1. ブートストラップを実行  
 ```cdk bootstrap```
 1. デプロイ  
 ```cdk deploy```
-1. Outputs に表示される URL にアクセス（EC2 の環境構築までに10分~15分かかります）  
+1. Outputs に表示される URL にアクセス（EC2 の環境構築までに10分~15分かかります。完了するまでは 502 Bad Gateway が表示されます。）  
 ```Outputs: LangflowCdkStack.DNSAdress = http://XXX.HOSTED_REAGION.elb.amazonaws.com:7860```
 1. 削除  
 ```cdk destroy```
