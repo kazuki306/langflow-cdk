@@ -5,7 +5,7 @@
 ## 使い方
 
 1. このリポジトリをクローン  
-```git clone ~```
+```git clone https://github.com/kazuki306/langflow-cdk.git```
 1. 必要なモジュールをインストール  
 ```npm install```
 1. CloudFormationのテンプレート作成  
