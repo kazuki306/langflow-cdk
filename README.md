@@ -1,14 +1,23 @@
-# Welcome to your CDK TypeScript project
+# langflow on AWS
 
-This is a blank project for CDK development with TypeScript.
+[langflow](https://github.com/logspace-ai/langflow) を [AWS CDK](https://aws.amazon.com/jp/cdk/) を用いて [Amazon EC2](https://aws.amazon.com/jp/ec2/) 上にホストします。
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## 使い方
 
-## Useful commands
+1. このリポジトリをクローン  
+```git clone ~```
+1. 必要なモジュールをインストール  
+```npm install```
+1. CloudFormationのテンプレート作成  
+```cdk synth```
+1. ブートストラップスタックをインストール  
+```cdk bootstrap```
+1. デプロイ  
+```cdk deploy```
+1. Outputs に表示される URL にアクセス。EC2 の環境構築までに10分~15分かかります。  
+```Outputs: LangflowCdkStack.DNSAdress = http://XXX.HOSTED_REAGION.elb.amazonaws.com:7860```
+1. 削除  
+```cdk destroy```
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## 環境構築
+Cloud9 上で動作を確認しています。環境構築の方法は[こちら](https://docs.aws.amazon.com/ja_jp/cloud9/latest/user-guide/sample-cdk.html)。
